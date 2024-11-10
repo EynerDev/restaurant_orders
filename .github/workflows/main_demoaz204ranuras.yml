@@ -70,6 +70,6 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'demoaz204ranuras'
-          slot-name: 'Production'
+          slot-name: 'qa'
           package: .
           

@@ -27,7 +27,8 @@ class HomeController extends Controller
     {
         $sliders = Slider::all();
         $categories =  Category::all();
+        $banner = Slider::inRandomOrder()->first();
 
-        return view('home', compact('sliders','categories'));
+        return view('home', compact('banner','sliders','categories'));
     }
 }
